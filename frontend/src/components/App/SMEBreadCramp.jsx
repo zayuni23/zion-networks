@@ -6,7 +6,7 @@ import { FaArrowsAltH } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Motion from "./motion";
 
-const Breadcramp = () => {
+const SMEBreadCramp = () => {
   return (
     <div>
       <div className="">
@@ -19,13 +19,13 @@ const Breadcramp = () => {
           >
             <div className="absolute flex flex-col gap-2 bg-[#00000065] top-0 right-0 left-0 h-[60vh]  items-center justify-center text-white">
               <Motion>
-                <h2 className="text-[90px]">Home Packages</h2>
+                <h2 className="text-[90px]">SME Packages</h2>
               </Motion>
               <Motion>
                 <div className="flex items-center gap-3 bg-green-700 text-white font-semibold rounded-md px-4 py-2 text-[20px]">
                   <Link to={`/`}>Home</Link>
                   <FaArrowsAltH />
-                  <Link to={`/home-packages`}>Home Packages</Link>
+                  <Link to={`/sme-packages`}>SME Packages</Link>
                 </div>
               </Motion>
             </div>
@@ -36,4 +36,4 @@ const Breadcramp = () => {
   );
 };
 
-export default Breadcramp;
+export default SMEBreadCramp;

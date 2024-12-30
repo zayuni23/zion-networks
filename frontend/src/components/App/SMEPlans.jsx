@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
 import Motion from "./motion";
 
-const Plans = () => {
+const SMEPlans = () => {
   const whatsappNumber = "254712345678"; // Replace with your company's WhatsApp number
   const companyEmail = "info@yourcompany.com"; // Replace with your company's email address
 
@@ -34,8 +34,7 @@ const Plans = () => {
       details: "Unlimited internet speeds up to 8 Mbps",
       support: "24/7 support",
       price: "Ksh.5,000/Month",
-      imgUrl:
-        "https://media.istockphoto.com/id/1917493450/photo/whats-everyone-thoughts.jpg?s=2048x2048&w=is&k=20&c=_o3amKYLCDss-vtYYDAzmb-R4r8yqKHp32dLyRHIUq0=",
+      imgUrl: "https://placehold.co/600x400/png",
     },
     {
       id: 2,
@@ -49,36 +48,6 @@ const Plans = () => {
     },
     {
       id: 3,
-      title: "GOLD",
-      speed: "20 Mbps",
-      description: "Ideal for 20-30 users",
-      details: "Unlimited internet speeds up to 20 Mbps",
-      support: "24/7 support",
-      price: "Ksh.10,000/Month",
-      imgUrl: "https://placehold.co/600x400/png",
-    },
-    {
-      id: 4,
-      title: "GOLD",
-      speed: "20 Mbps",
-      description: "Ideal for 20-30 users",
-      details: "Unlimited internet speeds up to 20 Mbps",
-      support: "24/7 support",
-      price: "Ksh.10,000/Month",
-      imgUrl: "https://placehold.co/600x400/png",
-    },
-    {
-      id: 5,
-      title: "GOLD",
-      speed: "20 Mbps",
-      description: "Ideal for 20-30 users",
-      details: "Unlimited internet speeds up to 20 Mbps",
-      support: "24/7 support",
-      price: "Ksh.10,000/Month",
-      imgUrl: "https://placehold.co/600x400/png",
-    },
-    {
-      id: 6,
       title: "GOLD",
       speed: "20 Mbps",
       description: "Ideal for 20-30 users",
@@ -124,7 +93,7 @@ const Plans = () => {
           {products.map((product) => (
             <div
               key={product.id}
-              className="w-80 rounded-lg m-5 mt-8 shadow-lg bg-white border flex flex-col border-gray-200 h-[550px] justify-between"
+              className="w-80 rounded-lg shadow-lg bg-white border border-gray-200"
             >
               <div className="bg-green-600 text-white text-center py-2 rounded-t-lg font-semibold">
                 {product.title}
@@ -133,7 +102,7 @@ const Plans = () => {
                 <img
                   src={product.imgUrl}
                   alt={product.title}
-                  className="mx-auto mb-4 w-60 h-auto object-cover rounded-md cursor-cell hover:scale-x-105 hover:-skew-x-12 transform transition-all"
+                  className="mx-auto mb-4 w-32 h-20"
                 />
                 <h2 className="text-2xl font-bold text-gray-800">
                   {product.speed}
@@ -163,4 +132,4 @@ const Plans = () => {
   );
 };
 
-export default Plans;
+export default SMEPlans;

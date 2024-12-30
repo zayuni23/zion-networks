@@ -17,6 +17,7 @@ import {
 } from "react-icons/fa6";
 import { AiFillQuestionCircle } from "react-icons/ai";
 import { MdHomeRepairService } from "react-icons/md";
+import { FaShopify } from "react-icons/fa6";
 
 // navigation Data
 export const navItems = [
@@ -30,8 +31,9 @@ export const navItems = [
     url: "/about",
     icon: FaCircleInfo,
     subItems: [
-      { title: "Our Team", url: "/about/team" },
+      { title: "Our Team", url: "/about" },
       { title: "Our Mission", url: "/about/mission" },
+      { title: "Careers", url: "/careers" }, // i hope hio ndio spelling ama
     ],
   },
   {
@@ -40,12 +42,17 @@ export const navItems = [
     icon: MdHomeRepairService,
   },
   {
+    title: "Store",
+    url: "/store",
+    icon: FaShopify,
+  },
+  {
     title: "Packages",
     url: "/packages",
     icon: FaCartShopping,
     subItems: [
-      { title: "ZION HOME", url: "/zion-home" },
-      { title: "ZION SME", url: "/zion-sme" },
+      { title: "ZION HOME", url: "/home-packages" },
+      { title: "ZION SME", url: "/sme-packages" },
     ],
   },
   {
