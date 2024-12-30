@@ -16,7 +16,7 @@ import AdminDashboard from "./pages/app/AdminDashboard";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import BackToTopButton from "./components/App/BackToTopButton";
-import AdminUser from "./pages/app/AdminUser";
+// import AdminUser from "./pages/app/AdminUser";
 
 function App() {
   return (
@@ -34,7 +34,7 @@ function App() {
           <Route path="/contact" element={<Contactpage />} />
           <Route path="/customer/dashboard" element={<CustomerDashboard />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
-          <Route path="/admin/users" element={<AdminUser />} />
+          {/* <Route path="/admin/users" element={<AdminUser />} /> */}
         </Routes>
       </Router>
     </div>
