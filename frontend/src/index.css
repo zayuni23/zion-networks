@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -20,18 +22,31 @@ body {
 }
 
 /* 5. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 6. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 7. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -39,29 +54,34 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
 /*
   9. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
-
 @font-face {
   font-family: Asta;
-  src: url(assets/Fonts/Astakhov-First-Simple.ttf);
+  src: url(/assets/Fonts/Astakhov-First-Simple.ttf);
 }
 @font-face {
   font-family: Exo;
-  src: url(assets/Fonts/Exo-ExtraBold.ttf);
+  src: url(/assets/Fonts/Exo-ExtraBold.ttf);
 }
 @font-face {
   font-family: Breez;
-  src: url(assets/Fonts/BreeSerif-Regular.ttf);
+  src: url(/assets/Fonts/BreeSerif-Regular.ttf);
 }
 
 * {
@@ -121,18 +141,26 @@ span {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #0D874C, #52c882); /* Gradient for a modern look */
+  background: linear-gradient(
+    135deg,
+    #0d874c,
+    #52c882
+  ); /* Gradient for a modern look */
   border-radius: 10px;
   transition: background 0.3s ease, transform 0.3s ease; /* Smooth hover animation */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #52c882, #0D874C); /* Reverse gradient on hover */
+  background: linear-gradient(
+    135deg,
+    #52c882,
+    #0d874c
+  ); /* Reverse gradient on hover */
   transform: scale(1.2); /* Slightly enlarge for better visibility */
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: #0D874C; /* Solid color for active interaction */
+  background: #0d874c; /* Solid color for active interaction */
   transform: scale(1.1); /* Slightly smaller than hover */
 }
 
@@ -140,15 +168,13 @@ span {
   display: none; /* Hides buttons */
 }
 
-
-
 .button {
   padding: 0.9em 2em;
   border-radius: 4px;
   font-weight: bold;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #0D874C;
+  color: #0d874c;
   font-family: Exo;
   transition: all 1000ms;
   font-size: 14px;
@@ -174,7 +200,7 @@ span {
   top: 0;
   width: 0;
   height: 100%;
-  background-color: #0D874C;
+  background-color: #0d874c;
   transform: skewX(40deg);
   z-index: -1;
   transition: width 500ms;
@@ -214,7 +240,6 @@ span {
   }
 }
 
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -241,7 +266,7 @@ span {
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -267,7 +292,7 @@ span {
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%
+    --chart-5: 340 75% 55%;
   }
 }
 @layer base {
@@ -278,5 +303,3 @@ span {
     @apply bg-background text-foreground;
   }
 }
-
-
