@@ -14,7 +14,6 @@ import {
   FaEdit,
   FaEnvelope,
 } from "react-icons/fa";
-// ulichange the name
 
 const AdminUser = () => {
   const [users, setUsers] = useState([

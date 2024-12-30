@@ -16,7 +16,7 @@ import AdminDashboard from "./pages/app/AdminDashboard";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import BackToTopButton from "./components/App/BackToTopButton";
-import AdminUser from "pages/app/AdminUser";
+import AdminUser from "./pages/app/AdminUser";
 
 function App() {
   return (
