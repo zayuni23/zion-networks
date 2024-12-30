@@ -13,17 +13,17 @@ import Packagespage from "./pages/app/Packagespage";
 import FAQpage from "./pages/app/FAQpage";
 import CustomerDashboard from "./pages/app/CustomerDashboard.jsx";
 import AdminDashboard from "./pages/app/AdminDashboard";
-import AdminUser from "./pages/app/AdminUser"; // case sensitive admim Admin
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import BackToTopButton from "./components/App/BackToTopButton";
+import AdminUser from "pages/app/AdminUser";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <ToastContainer />
-        <BackToTopButton/>
+        <BackToTopButton />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<Aboutpage />} />

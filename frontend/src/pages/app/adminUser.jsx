@@ -14,8 +14,9 @@ import {
   FaEdit,
   FaEnvelope,
 } from "react-icons/fa";
+// ulichange the name
 
-const AdminDashboard = () => {
+const AdminUser = () => {
   const [users, setUsers] = useState([
     { id: 1, name: "John Doe", email: "john@example.com" },
     { id: 2, name: "Jane Smith", email: "jane@example.com" },
@@ -199,4 +200,4 @@ const AdminDashboard = () => {
   );
 };
 
-export default AdminDashboard;
+export default AdminUser;
