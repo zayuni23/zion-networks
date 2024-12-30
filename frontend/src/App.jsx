@@ -13,7 +13,7 @@ import Packagespage from "./pages/app/Packagespage";
 import FAQpage from "./pages/app/FAQpage";
 import CustomerDashboard from "./pages/app/CustomerDashboard.jsx";
 import AdminDashboard from "./pages/app/AdminDashboard";
-import AdminUser from "./pages/app/AdminUser";
+import AdminUser from "./pages/app/AdminUser"; // case sensitive admim Admin
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import BackToTopButton from "./components/App/BackToTopButton";
