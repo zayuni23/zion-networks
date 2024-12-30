@@ -1,0 +1,282 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+@font-face {
+  font-family: Asta;
+  src: url(../src/assets/Fonts/Astakhov-First-Simple.ttf);
+}
+@font-face {
+  font-family: Exo;
+  src: url(../src/Assets/Fonts/Exo-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Breez;
+  src: url(../src/Assets/Fonts/BreeSerif-Regular.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Poppins",
+    "Roboto", "Bree Serif";
+}
+/* Highlight color for selected text 
+::selection {
+  background-color: #03c13c; /* Highlight color
+  color: #fff;  Text color
+} */
+
+.transition {
+  transition-timing-function: ease-out;
+}
+
+.App {
+  /* text-align: center;  its affecting the whole app*/
+  font-family: "Poppins";
+  font-weight: 300;
+  overflow-x: hidden;
+}
+.App p,
+ul,
+li,
+a,
+label,
+p {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.2px;
+}
+.App h1,
+h2,
+h3,
+h4,
+span {
+  font-family: "Exo";
+  /* font-family: "Exo 2"; */
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Light track for contrast */
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #0D874C, #52c882); /* Gradient for a modern look */
+  border-radius: 10px;
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth hover animation */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #52c882, #0D874C); /* Reverse gradient on hover */
+  transform: scale(1.2); /* Slightly enlarge for better visibility */
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #0D874C; /* Solid color for active interaction */
+  transform: scale(1.1); /* Slightly smaller than hover */
+}
+
+::-webkit-scrollbar-button {
+  display: none; /* Hides buttons */
+}
+
+
+
+.button {
+  padding: 0.9em 2em;
+  border-radius: 4px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #0D874C;
+  font-family: Exo;
+  transition: all 1000ms;
+  font-size: 14px;
+  position: relative;
+  margin: 18px 10px;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  gap: 1rem;
+}
+
+.button:hover {
+  color: #ffffff;
+  transform: scale(1.02);
+  outline: none;
+  border: none;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #0D874C;
+  transform: skewX(40deg);
+  z-index: -1;
+  transition: width 500ms;
+  border: none;
+}
+
+.button:hover::before {
+  width: 150%;
+}
+
+/* Scroll Animation */
+.hidden {
+  opacity: 0;
+  filter: blur(4px);
+  transform: translateX(-50%);
+  transition: all 880ms;
+}
+.hidden2 {
+  opacity: 0;
+  filter: blur(4px);
+  transform: translateX(50%);
+  transition: all 880ms;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.header-hide {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .header-hide {
+    display: flex;
+  }
+}
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%
+  }
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
