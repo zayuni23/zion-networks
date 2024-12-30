@@ -53,15 +53,15 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: Asta;
-  src: url(../src/assets/Fonts/Astakhov-First-Simple.ttf);
+  src: url(assets/Fonts/Astakhov-First-Simple.ttf);
 }
 @font-face {
   font-family: Exo;
-  src: url(../src/Assets/Fonts/Exo-ExtraBold.ttf);
+  src: url(assets/Fonts/Exo-ExtraBold.ttf);
 }
 @font-face {
   font-family: Breez;
-  src: url(../src/Assets/Fonts/BreeSerif-Regular.ttf);
+  src: url(assets/Fonts/BreeSerif-Regular.ttf);
 }
 
 * {
