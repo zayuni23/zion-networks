@@ -32,14 +32,14 @@ const Hero = () => {
               </div>
             </Motion>
 
-            {/* Title Section with SEO-Focused Text */}
+            {/* Title Section */}
             <Motion>
               <h2 className="capitalize text-4xl sm:text-5xl font-extrabold animate__animated animate__fadeIn">
                 Seamless Connectivity for All Your Internet Needs
               </h2>
             </Motion>
 
-            {/* Description Section with Benefits */}
+            {/* Description Section */}
             <Motion>
               <h4 className="text-lg md:text-xl mt-4 animate__animated animate__fadeIn">
                 Enjoy uninterrupted streaming, work, and play with our
@@ -48,7 +48,7 @@ const Hero = () => {
               </h4>
             </Motion>
 
-            {/* Pricing Section with Call to Action */}
+            {/* Pricing Section */}
             <Motion>
               <h2 className="text-green-400 text-3xl sm:text-4xl font-semibold mt-5 animate__animated animate__fadeIn">
                 Only Ksh 2500<span className="text-white">/month</span>
@@ -57,11 +57,11 @@ const Hero = () => {
 
             {/* Call to Action Buttons */}
             <div className="flex gap-6 mt-4 justify-center items-center">
-              {/* Start Now Button */}
+              {/* Get Started Now Button */}
               <Motion>
                 <Link to="/packages" className="no-underline">
                   <h4 className="bg-white text-green-800 font-bold py-3 px-8 rounded-md border-none hover:bg-green-800 hover:text-white transition-all duration-300 ease-in-out">
-                    START NOW
+                    GET STARTED NOW
                   </h4>
                 </Link>
               </Motion>

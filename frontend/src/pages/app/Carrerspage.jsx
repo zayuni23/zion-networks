@@ -3,7 +3,7 @@ import Footer from "../../components/App/Footer";
 import Header from "../../components/App/Header";
 import React from "react";
 
-const Carrerspage = () => {
+const Careerspage = () => {
   return (
     <div>
       <Header />
@@ -13,4 +13,4 @@ const Carrerspage = () => {
   );
 };
 
-export default Carrerspage;
+export default Careerspage;

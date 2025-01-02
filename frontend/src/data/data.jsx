@@ -33,7 +33,7 @@ export const navItems = [
     subItems: [
       { title: "Our Team", url: "/about" },
       { title: "Our Mission", url: "/about/mission" },
-      { title: "Careers", url: "/careers" }, // i hope hio ndio spelling ama
+      { title: "Careers", url: "/careers" },
     ],
   },
   {
@@ -179,10 +179,6 @@ export const footerSupport = [
 // footer website Links
 export const footerWebsiteLinks = [
   {
-    item: "Iconnect",
-    link: "/",
-  },
-  {
     item: "About Us",
     link: "/about",
   },
@@ -225,43 +221,46 @@ export const SERVICES_DATA = [
   {
     id: 1,
     image: "https://placehold.co/600x400/png",
-    title: "Noteworthy technology acquisitions 2021",
-    description: "Here are the biggest enterprise technology acquisitions...",
-    link: "#",
+    title: "Solar & Backup Power Solutions",
+    description:
+      "At Zion Networks, we provide cutting-edge Solar and Backup Power Solutions tailored for residential areas, industries, and businesses. Our services empower families and enterprises with affordable, reliable off-grid power solutions, ensuring uninterrupted energy for daily activities and operations. Whether you're a small household or a large industry, Zion Networks delivers sustainable energy systems that bring independence and peace of mind.",
+    link: "https//www.wa.me//+254756881148",
   },
   {
     id: 2,
     image: "https://placehold.co/600x400/png",
-    title: "Noteworthy technology acquisitions 2021",
-    description: "Here are the biggest enterprise technology acquisitions...",
-    link: "#",
+    title: "Mounting, Dissmounting and Drilling Services",
+    description:
+      "Zion Networks offers expert Mounting, Dismounting, and Drilling Services for TVs, signboards, shelves, and more. Whether you're enhancing your home or elevating your business space, we ensure precision, safety, and durability in every installation. From clean drilling to secure mounting, our services are designed to make your projects hassle-free and professionally executed.",
+    link: "https//www.wa.me//+254756881148",
   },
   {
     id: 3,
     image: "https://placehold.co/600x400/png",
-    title: "Noteworthy technology acquisitions 2021",
-    description: "Here are the biggest enterprise technology acquisitions...",
+    title: "Your Trusted Partner for All Government Services",
+    description:
+      "Zion Networks is your go-to solution for all Kenyan Government, County, and Local services. From passport applications, civil registrations (birth, death, marriage), and HELB loans to CRB, EACC, and KRA services (PINs, tax returns), we’ve got you covered. We also assist with NTSA driver’s licenses, job applications, and more—making these processes quick and convenient. Just reach out, and we’ll handle the rest!",
     link: "#",
   },
   {
     id: 4,
     image: "https://placehold.co/600x400/png",
-    title: "Noteworthy technology acquisitions 2021",
-    description: "Here are the biggest enterprise technology acquisitions...",
+    title: "Hardware repair, motherboard and software",
+    description: "At Zion Networks, we specialize in reliable and efficient tech repair services. Whether it’s fixing hardware issues, diagnosing and repairing motherboards, or resolving software problems, we’ve got you covered. Our team ensures your devices are back to optimal performance with minimal downtime. Trust us to handle your tech challenges with precision and care—just reach out, and we’ll do the rest!",
     link: "#",
   },
   {
     id: 4,
     image: "https://placehold.co/600x400/png",
-    title: "Noteworthy technology acquisitions 2021",
-    description: "Here are the biggest enterprise technology acquisitions...",
+    title: "Bringing Your Ideas to Life with Expert Web App Development",
+    description: "At Zion Networks, we create custom web applications tailored to meet your business needs. From user-friendly interfaces to robust back-end systems, we build solutions that are scalable, secure, and efficient. Whether you're looking to enhance your online presence or develop a complex platform, our team is here to turn your vision into reality. Reach out today, and let’s build something great together!",
     link: "#",
   },
   {
     id: 4,
     image: "https://placehold.co/600x400/png",
-    title: "Noteworthy technology acquisitions 2021",
-    description: "Here are the biggest enterprise technology acquisitions...",
+    title: "Transforming Ideas into Stunning Visuals",
+    description: "At Zion Networks, we offer top-tier Graphic Design and Video Editing services to bring your creative vision to life. Whether you need eye-catching logos, engaging social media content, or professional video editing, our team crafts visuals that resonate with your audience. We ensure every design and video is tailored to your needs, creating impactful and memorable experiences. Reach out today, and let's create something amazing together!",
     link: "#",
   },
   {
